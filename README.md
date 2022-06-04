@@ -4,6 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  
 ## Made by Donato Alvarez
 
-# clone repo
-# npm i
-# ng serve
+## clone repo
+## npm i
+## ng serve
