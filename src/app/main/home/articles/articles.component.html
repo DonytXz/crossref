@@ -1,0 +1,23 @@
+<div class="mt-4">
+  <p class="text-left text-lg text-gray-600 font-semibold w-10/12 mx-auto">
+    Crossref makes research objects easy to find, cite, link, assess, and reuse.
+    We’re a not-for-profit membership organization that exists to make scholarly
+    communications better.
+  </p>
+  <p class="text-3xl font-bold text-center my-2">
+    Articles
+    <ng-container *ngIf="this.articlesFound != ''">
+      <span class="ml-2">Found</span>
+    </ng-container>
+  </p>
+  <ng-container *ngIf="!lodding">
+    <div
+      class="flex flex-col 10 lg:grid lg:grid-cols-2 lg:gap-2 lg:content-between w-10/12 mx-auto"
+    >
+      <app-article
+        *ngFor="let article of articles?.message?.items"
+        [article]="article"
+      ></app-article>
+    </div>
+  </ng-container>
+</div>

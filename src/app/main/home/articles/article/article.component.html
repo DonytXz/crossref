@@ -1,0 +1,41 @@
+<div
+  class="grid grid-cols-1 gap-y-2 gap-x-4 h-full bg-gray-200 p-4 mt-2 lg:mt-0"
+>
+  <!-- <a
+    routerLink="['/details']"
+    [queryParams]="{ doi: doi }"
+    class="grid grid-cols-1 gap-y-2 gap-x-4 content-between"
+  > -->
+  <div (click)="handleRedirect()"     class="grid grid-cols-1 gap-y-2 gap-x-4 content-between cursor-pointer">
+
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:my-1">
+      <p class="my-1"><span class="font-bold">Title: </span>{{ title }}</p>
+      <p class="my-1"><span class="font-bold">Date: </span>{{ date }}</p>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:my-1">
+      <p class="my-1">
+        <span class="font-bold">Publisher: </span>{{ publisher }}
+      </p>
+      <p class="my-1"><span class="font-bold">Language: </span>{{ lang }}</p>
+    </div>
+  </div>
+  <!-- </a> -->
+
+  <ng-container *ngIf="link != 'N/A'">
+    <a
+      (click)="goToLink(link)"
+      class="text-white cursor-pointer d-block mt-auto"
+      ><div
+        title="Read in external website"
+        class="flex flex-row justify-center bg-blue-400 px-2 py-1"
+      >
+        Read
+      </div>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="link == 'N/A'">
+    <div class="flex flex-row justify-center bg-red-400 px-2 py-1 mt-auto">
+      <a title="Not adviable to read" class="text-white">Not adviable</a>
+    </div>
+  </ng-container>
+</div>

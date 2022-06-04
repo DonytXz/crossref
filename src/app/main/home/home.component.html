@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="relative">
+
+  <app-hero></app-hero>
+  <div class="absolute top-1/2 flex w-full">
+    <input (keyup.enter)="handleSearch()" [(ngModel)]="query" class="bg-white mx-auto p-2 px-4 w-1/2" type="text" placeholder="search by title or autor">
+  </div>
+</div>
+
+
+  <app-articles [articlesFound]="articlesFound" [page]="page"></app-articles>
+
+<app-pagination
+  (pageOut)="emiterPage($event)"
+></app-pagination>
