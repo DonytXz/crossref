@@ -1,18 +1,37 @@
 # Crossref
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
- 
-## Made by Donato Alvarez
+An Angular application for searching and viewing works from the Crossref API.
 
-## clone repo
-## npm i
-## ng serve
+## Development
+
+This project uses Angular 22 and Node.js 24.
+
+```bash
+npm ci
+npm start
+```
+
+Run the automated checks with:
+
+```bash
+npm audit
+npm run test:ci
+npm run build:pages
+```
+
+## Deployment
+
+Pushes to `main` are tested, built, and deployed automatically to
+[GitHub Pages](https://donytxz.github.io/crossref/) by the
+`Deploy to GitHub Pages` workflow. The repository's Pages source must be set to
+**GitHub Actions**.
+
+## Made by Donato Alvarez
 
 ### Follow Up Questions:
 
 1. What libraries did you use? Why did you use them? 
-  I think the only non angular 'ecosistem' is tailwindCSS, i use this css framework because i feel pretty comfortable 
-  doing the layout with and I like so much the utilytis.
+  The only non-Angular UI dependency is Tailwind CSS, used for layout and utility styles.
 3. If you had more time, what further improvements or new features would you add?
   Improve performance and dessing, I also like to add unit test.
 5. Which parts are you most proud of? And why?

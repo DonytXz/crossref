@@ -10,6 +10,7 @@ import { ArticlesService } from '../articles.service';
 import { environment } from 'environments/environment';
 
 @Component({
+  standalone: false,
   selector: 'app-articles',
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.css'],
