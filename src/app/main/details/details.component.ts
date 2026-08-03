@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ArticlesService } from '../home/articles.service';
 
 @Component({
+  standalone: false,
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css'],

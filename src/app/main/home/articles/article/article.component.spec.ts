@@ -16,9 +16,17 @@ describe('ArticleComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ArticleComponent);
     component = fixture.componentInstance;
+    component.article = {
+      created: { 'date-time': '2022-01-01T00:00:00Z' },
+      title: ['Test article'],
+      publisher: 'Test publisher',
+      language: 'en',
+      DOI: '10.0000/test',
+    };
     fixture.detectChanges();
   });
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 });

@@ -10,6 +10,7 @@ import {
 import { ArticlesService } from '@app/main/home/articles.service';
 
 @Component({
+  standalone: false,
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.css'],

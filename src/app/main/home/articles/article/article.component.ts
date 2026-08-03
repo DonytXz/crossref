@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
+  standalone: false,
   selector: 'app-article',
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.css'],

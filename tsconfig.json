@@ -2,11 +2,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "src",
     "paths": {
       "@app/*": [
-        "app/*"
+        "./src/app/*"
       ],
+      "environments/*": [
+        "./src/environments/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -17,12 +19,13 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
-    "target": "es2017",
-    "module": "es2020",
+    "target": "ES2022",
+    "module": "preserve",
     "lib": [
       "es2020",
       "dom"
