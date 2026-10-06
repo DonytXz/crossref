@@ -23,11 +23,11 @@
     "zone.js": "~0.16.3"
   },
   "devDependencies": {
-    "@angular/build": "^22.2.0",
-    "@angular/cli": "^22.2.0",
-    "@angular/compiler-cli": "^22.2.0",
-    "@types/jasmine": "^6.0.0",
-    "@types/node": "^26.6.2",
+    "@angular/build": "^22.2.1",
+    "@angular/cli": "^22.2.1",
+    "@angular/compiler-cli": "^22.2.1",
+    "@types/jasmine": "^7.0.0",
+    "@types/node": "^26.6.4",
     "autoprefixer": "^10.6.1",
     "jasmine-core": "^7.0.2",
     "karma": "^6.4.4",
