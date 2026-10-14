@@ -17,6 +17,12 @@ updates:
       - dependency-name: tailwindcss
         versions:
           - ">=4.0.0"
+      - dependency-name: jasmine-core
+        versions:
+          - ">=7.0.0"
+      - dependency-name: "@types/jasmine"
+        versions:
+          - ">=7.0.0"
 
   - package-ecosystem: github-actions
     directory: /

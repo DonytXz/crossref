@@ -26,10 +26,10 @@
     "@angular/build": "^22.2.2",
     "@angular/cli": "^22.2.2",
     "@angular/compiler-cli": "^22.2.2",
-    "@types/jasmine": "^7.0.0",
+    "@types/jasmine": "^6.0.0",
     "@types/node": "^26.6.5",
     "autoprefixer": "^10.6.1",
-    "jasmine-core": "^7.0.2",
+    "jasmine-core": "^6.3.0",
     "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
     "karma-coverage": "^2.2.1",
@@ -45,9 +45,9 @@
   },
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,
-    "esbuild@0.28.1": true,
     "fsevents@2.3.3": true,
     "lmdb@3.5.6": true,
-    "msgpackr-extract@3.0.4": true
+    "msgpackr-extract@3.0.4": true,
+    "esbuild@0.28.2": true
   }
 }
