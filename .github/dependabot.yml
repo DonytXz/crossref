@@ -8,8 +8,12 @@ updates:
       angular:
         patterns:
           - "@angular/*"
+          - "@angular-devkit/*"
       development-tooling:
         dependency-type: development
+        exclude-patterns:
+          - "@angular/*"
+          - "@angular-devkit/*"
     ignore:
       - dependency-name: typescript
         versions:
